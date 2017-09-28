@@ -1,0 +1,39 @@
+<!doctype html>
+<title>2주차 실습</title>
+
+<head>
+</head>
+<body>
+	<div id= "myRect" style="transition: all 1s;">
+		<img style="width: 180px;height: auto; margin-top: 200px;" src="https://cdn.pixabay.com/photo/2013/07/12/14/09/space-ship-147881_960_720.png">
+	</div>
+
+	
+		<img style="width: 400px; height: auto; margin-top: -220px; margin-left:1150px; " src="https://cdn.pixabay.com/photo/2013/07/12/19/03/international-space-station-154273_640.png">
+
+
+
+
+	<input type="range" id="myPicker" min="50" max="1000" align="center"> !
+	</div>	
+		<script>
+			myPicker.onchange = function(){
+				myRect.style.marginLeft = myPicker.value + "px";
+				rangeValue.innerHTML = myPicker.value
+			}
+
+
+
+		</script>
+
+<style>
+	input{margin-top: 300px; width: 500px;}
+	body{
+	background-image: url('http://i.huffpost.com/gen/5089222/images/o-UNIVERSE-facebook.jpg');
+	background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+</style>
+</body>
